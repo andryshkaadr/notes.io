@@ -1,0 +1,121 @@
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #83d1d1;
+}
+.header {
+    margin-top: -90px;
+    z-index: 101;
+    position: fixed;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 100%);
+}
+.header .name {
+    user-select: none;
+    height: 60px;
+    background-color: #00080d;
+    padding-left: 50px;
+    font-weight: 300;
+    font-size: 26px;
+    padding-top: 25px;
+    color: #fff;
+}
+.area {
+    margin-top: 90px;
+    width: 100%;
+    min-height: 87.5vh;
+    max-height: 100vh;
+    position: relative;
+}
+.area .box {
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    background-color: #1b1725;
+    cursor: pointer;
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+}
+textarea {
+    background-color: #ffffff;
+    font-size: 14px;
+    margin: 10px;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  outline: 1px solid #160F29; 
+  border-right-style: none;
+  border-radius: 2px;
+}
+.delete {
+    position: fixed;
+    z-index: 11;
+    top: 110px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.delete:hover {
+    transition: 0.2s;
+    -webkit-box-shadow: 0px 0px 27px -10px #fff; 
+    box-shadow: 0px 0px 27px -10px #fff;
+}
+.btn {
+    position: fixed;
+    z-index: 10;
+    top: 35px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-weight: 300;
+    transition: 0.2s;
+}
+.btn:hover {
+    transition: 0.2s;
+    -webkit-box-shadow: 0px 0px 27px -10px #fff; 
+    box-shadow: 0px 0px 27px -10px #fff;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    background-color: #00080d;
+    padding: 4px 0px;
+}
+.footer a{
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #fff;
+}
